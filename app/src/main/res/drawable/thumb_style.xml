@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+
+                android:startColor="#673AB7" />
+            <size android:width="20dp"/>
+            <size android:height="20dp"/>
+
+
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_down2"
+            android:gravity="center"/>
+    </item>
+</layer-list>

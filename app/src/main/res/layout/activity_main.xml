@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleY="1.1"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:scaleY="1.2"
+        android:src="@drawable/weed1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleX="0.3"
+        android:scaleY="0.2"
+        android:src="@drawable/textstyleapp"
+        android:translationX="5dp"
+        android:translationY="-320dp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <Button
+        android:id="@+id/Apply"
+        style="@style/Platform.MaterialComponents.Light"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/button_press"
+        android:fontFamily="@font/audiowide"
+        android:includeFontPadding="false"
+        android:insetLeft="0dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="11dp"
+        android:text="@string/apply"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@drawable/text_button_press"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FF9100"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:translationY="-90dp"
+        app:backgroundTint="@color/white"
+        app:backgroundTintMode="multiply"
+        app:icon="@drawable/icon_button_press"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:rippleColor="#A56767"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="175dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/BillAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/billamount"
+            android:textColor="#00BCD4"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#CDDC39"
+            android:textColorLink="#3F51B5"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="80dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/Percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/percent"
+            android:textColor="#00BCD4"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="110dp" />
+
+        <TextView
+            android:id="@+id/Tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/tip"
+            android:textColor="#00BCD4"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="140dp" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/total"
+            android:textColor="#04E3FF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="170dp" />
+
+        <TextView
+            android:id="@+id/Rounding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/rounding"
+            android:textColor="#00E2FF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="200dp" />
+
+        <TextView
+            android:id="@+id/SplitBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/splitbill"
+            android:textColor="#00E2FF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="320dp" />
+
+        <TextView
+            android:id="@+id/PerPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:text="@string/perperson"
+            android:textColor="#03E1FD"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="50dp"
+            android:translationY="350dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="233dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txbBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/ic_weedline"
+            android:ems="10"
+            android:fontFamily="@font/allan"
+            android:hint="@string/enter_the_bill_amount"
+            android:inputType="number|numberDecimal"
+            android:textColor="#00FFBF"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#00FFBF"
+            android:textColorLink="#FF3D00"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationY="80dp" />
+
+        <TextView
+            android:id="@+id/txbPercent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:singleLine="true"
+            android:text="@string/_5"
+            android:textColor="#00FFBF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationX="10dp"
+            android:translationY="110dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:progress="5"
+            android:progressDrawable="@drawable/seeker_style"
+            android:thumb="@drawable/thumb_style"
+            android:translationX="-5dp"
+            android:translationY="110dp" />
+
+        <TextView
+            android:id="@+id/txbTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:singleLine="true"
+            android:text="@string/_0_00"
+            android:textColor="#00FFBF"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationY="117dp" />
+
+        <TextView
+            android:id="@+id/txbTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:singleLine="true"
+            android:text="@string/_0_00"
+            android:textColor="#00FFBF"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationY="146dp" />
+
+        <RadioGroup
+            android:id="@+id/radRounding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="165dp">
+
+            <RadioButton
+                android:id="@+id/radNone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_weedline2"
+                android:button="@drawable/radio_button_click"
+                android:fontFamily="@font/allan"
+                android:text="@string/none"
+                android:textColor="#00FFBF"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/radTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_weedline2"
+                android:button="@drawable/radio_button_click"
+                android:fontFamily="@font/allan"
+                android:text="@string/tip"
+                android:textColor="#00FFBF"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/radTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_weedline2"
+                android:button="@drawable/radio_button_click"
+                android:fontFamily="@font/allan"
+                android:text="@string/total"
+                android:textColor="#00FFBF"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txbPerPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allan"
+            android:singleLine="true"
+            android:text="@string/_0_00"
+            android:textColor="#00FFBF"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:translationY="229dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_style"
+            android:translationY="130dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

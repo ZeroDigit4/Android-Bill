@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <rotate xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromDegrees="180"
+        android:toDegrees="0"
+        android:drawable="@drawable/ic_fire2">
+    </rotate>
+</item>
+    <item android:drawable="@drawable/ic_button"></item>
+</layer-list>
